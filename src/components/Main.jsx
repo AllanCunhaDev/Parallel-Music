@@ -1,16 +1,14 @@
-import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import ItemList from "./ItemList";
+
 const Main = () => {
   return (
     <div className="main">
-      <div className="main_texts">
-        <h2>Artistas populares</h2>
-        <a className="main_link" href="/">
-          Mostrar tudo
-        </a>
-      </div>
-      <FontAwesomeIcon icon={faCirclePlay} />
+      {/* ItensList de Artitas */}
+      <ItemList title="Artistas" items = {5} />
+
+      {/* ItensList de Musicas */}
+      <ItemList title="Musicas" items = {10}/>
     </div>
   );
 };

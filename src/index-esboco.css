@@ -56,6 +56,7 @@ a {
   margin: 0px 10px 10px;
   flex: 1;
   background-image: linear-gradient(to bottom, #062d14, whitesmoke);
+  
 }
 .main_texts {
   display: flex;
