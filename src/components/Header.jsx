@@ -1,15 +1,16 @@
 import React from "react";
-import logoParallel from "../assets/comment-alt-music_10434581.svg";
+import { Link } from "react-router-dom";
+import logoParallel from "../assets/logo/logo.svg";
 
 const Header = () => {
   return (
     <div className="header">
-      <a href="/">
+      <Link to="/">
         <img className="logo" src={logoParallel} alt="Logo" />
-      </a>
-      <a className="header_link" href="/">
+      </Link>
+      <Link to="/" className="header_link" >
         <h1>Parallel Music</h1>
-      </a>
+      </Link>
     </div>
   );
 };
